@@ -65,8 +65,6 @@ export default class Weather extends Component {
 
           let colorIndex = Math.floor(this.map(this.state.weather.temp,minTemp,maxTemp,0,this.colors.length));
 
-          
-
 
           return(
             <div style={style}>
