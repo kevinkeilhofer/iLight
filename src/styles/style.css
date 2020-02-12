@@ -1,0 +1,4 @@
+.location-name,
+.weather-description {
+   text-transform: capitalize;
+}
