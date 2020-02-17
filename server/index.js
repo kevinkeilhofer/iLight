@@ -1,13 +1,14 @@
+//expressmodul nötig zu installieren
 const express = require('express');
-const app = express();
+const app = express(); //erzeugt instanz
 const bodyParser = require('body-parser');
 const path = require('path');
 
 const http = require('http');
-const socketio = require('socket.io');
+const socketio = require('socket.io'); 
 
 
-// 
+//Communication between Arduino and Backend
 const pixel = require("node-pixel");
 const firmata = require('firmata');
 //board initialisierung
@@ -47,14 +48,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../dist')));
 
-const server = http.createServer(app);
-const io = socketio(server);
+const server = http.createServer(app); //webserver wird erzeugt
+const io = socketio(server); //socket.io included
 
 const routes = require('./routes/index')(io);
 app.use('/', routes);
 
-var port = 9000;
+var port = 9000; //port zum öffnen im Browser
 
+//gibt aus in der console was zu tun ist
 server.listen(port, function() {
    console.log('running at localhost: ' + port);
 });
