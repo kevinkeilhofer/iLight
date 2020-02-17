@@ -21,7 +21,7 @@ var strip = new pixel.Strip({
 
     strip.on("ready", function() {
         // Set the entire strip to pink.
-      strip.color('#ffff00');
+      strip.color('#F7FE2E');
 
       // Set first and seventh pixels to turquoise.
       // strip.pixel(0).color('colorChoice');
