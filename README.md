@@ -3,9 +3,9 @@
 iLight wurde entwickelt um selbstständig die Farbwerte des Lichts der Außentemperatur anzupassen. Es lokalisiert ihre Position, gibt ihre Position aus, sowie das aktuelle Wetter. Je nach Temperatur ändert sich der Farbwert des Lichts. Sie möchten wie gewohnt selbst das Licht steuern, so wechseln sie in den anderen Modus und ändern sie den Farbwert selbst.
 Das Projekt wurde für alle LED- und Datenfanatiker unter uns gebaut.
 Dazu Inspirieren lassen habe ich mich von den Philipps Hue Leuchten, welche noch nicht ihre Farbwerte anhand Wetterdaten ändern.Verwendete Quelle war die API Dokumentation von [OpenWeatherMap](https://openweathermap.org/current).
-![Headline Picture](screenshot1.svg)
-![Headline Picture](screenshot2.svg)
-![Headline Picture](screenshot3.svg)
+![Headline Picture](screenshot1.png)
+![Headline Picture](screenshot2.png)
+![Headline Picture](screenshot3.png)
 
 ## Benutzung
 
