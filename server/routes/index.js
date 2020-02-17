@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require('express'); //expressmodul nötig zu installieren
 const router = express.Router();
 const weather = require('./weather');
 
 module.exports = function(io) {
-
+  //verbindung zu socket.io herstellen
   io.on('connection', socket => {
 
      const latitude = socket.handshake.query['latitude'], longitude = socket.handshake.query['longitude'];
@@ -15,7 +15,7 @@ module.exports = function(io) {
      10000);
 
   });
-
+  //greift auf das wetter zu durch länge-und breitengrad
   function getWeather( latitude, longitude, socket ) {
     console.log( latitude + ',' + longitude );
     if( typeof latitude !== 'undefined' && typeof longitude !== 'undefined' ) {
