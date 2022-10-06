@@ -25,7 +25,7 @@
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
     "colormap": "^2.3.1",
-    "css-loader": "^0.28.11",
+    "css-loader": "^6.7.1",
     "express": "^4.15.2",
     "file-loader": "^1.1.11",
     "firmata": "^1.0.0",
